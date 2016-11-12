@@ -1,0 +1,27 @@
+<div class="wrapper wrapper_padding clearfix">
+  <% @posts.each do |post| %>
+  <div class="col-2 homepage_content"><% link_to post, post %>
+    <div class="article_info">
+      <div class="icon-ball"></div>
+      <h4><%= post.sport %></h4>
+      <h3><%= link_to post.title, post %></h3>
+      <p class="date"><%= post.player %></p>
+      <p class="date"><%= post.postion %></p>
+      <p class="date"><%= post.team %></p>
+      <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+      <p class="date"><%= post.content %></p>
+    </div>
+  </div>
+  <% end %>
+  <% @projects.each do |project| %>
+  <div class="col-2 homepage_content football"><% link_to project, project %>
+    <div class="article_info">
+      <i class="fa fa-futbol-o fa-4x" aria-hidden="true"></i>
+      <h4>NBA</h4>
+      <h3><%= link_to project.title, project %></h3>
+      <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
+      <p class="date"><%= project.description %></p>
+    </div>
+  </div>
+  <% end %>
+</div>

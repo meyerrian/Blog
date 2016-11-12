@@ -1,0 +1,136 @@
+.col-1, .col-2, .col-3 {
+  float: left; }
+
+.col-2 {
+  width: 23%;
+  background-color: transparentize(black, .2);
+  padding: 1em;
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+  word-wrap: break-word;
+  margin: 1%;
+ }
+  .col-2:hover {
+    opacity: .9;
+  }
+ .col-2:first-child {
+   width: 98%;
+   height: 60vh;
+ }
+  .col-2:first-child .article_info {
+    border-bottom: none;
+    border-top: 5px solid $border;
+  }
+  .col-2:nth-child(4n-5) {
+    width: 23%;
+    padding: 1em;
+  }
+  .col-2:nth-child(2n) {
+    width: 23%;
+
+  }
+  .col-2:nth-child(2n) .article_info {
+      width: 100%;
+    }
+  .col-2:nth-child(3n) {
+    width: 23%;
+
+  }
+  .col-2:nth-child(3) .article_info {
+    width: 100%;
+  }
+  .col-2:nth-child(5n) {
+    width: 23%;
+  }
+
+
+.article_info {
+  width: 100%;
+  padding: 1em;
+  margin-top: 1em;
+  //background-color: white;
+  opacity: 1;
+  //transition: opacity 1.5s ease-in-out;
+  border-bottom: 5px solid $border;
+  //border-right: 5px solid $border;
+}
+  //.article_info:hover {
+    //opacity: 1;
+  //}
+
+.homepage_content h2 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+ }
+
+.homepage_content h3 {
+  font-size: 1.35em;
+  font-weight: 700;
+  margin-bottom: .5em;
+  text-align: center;
+}
+  .homepage_content h3 a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+   }
+    .homepage_content h3 a:hover {
+      color: transparentize(yellow, 0.1);
+    }
+
+.homepage_content p {
+  margin-bottom: 2em;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+ }
+
+ .icon-ball {
+   background-image: url(asset-path('Ball-Icon.png'));
+   background-size: 50px 50px;
+   background-repeat: no-repeat;
+   width: 50px;
+   height: 50px;
+   margin: .5em auto;
+   //background-color: pink;
+ }
+
+ .icon-Embiid {
+   background-image: url(asset-path('Embiid-Head.png'));
+   background-repeat: no-repeat;
+   width: 80px;
+   height: 74px;
+   margin: .5em auto;
+ }
+
+ .football {
+   background-color: rgba(124, 214, 240, 1);
+ }
+
+ .football i {
+   color: white;
+   width: 100%;
+   text-align: center;
+ }
+
+ .homepage_content h4 {
+   color: white;
+   text-align: center;
+ }
+
+
+
+@media (max-width: 1200px) {
+
+  .col-2,
+  .col-2:first-child,
+  .col-2:nth-child(4n-5),
+  .col-2:nth-child(2n),
+  .col-2:nth-child(3n),
+  .col-2:nth-child(5n) {
+    width: 100%;
+  }
+}
