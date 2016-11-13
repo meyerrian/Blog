@@ -18,6 +18,7 @@ gem 'mail_form', '~> 1.6'
 gem 'devise', '~> 4.2'
 gem 'sitemap_generator'
 gem 'aws-sdk'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
 group :development, :test do
   gem 'byebug'

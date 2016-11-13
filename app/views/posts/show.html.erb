@@ -7,6 +7,7 @@
   <div id="content">
     <%= markdown @post.content %>
   </div>
+    <%= image_tag @post.image.url(:large) %>
   <% if user_signed_in? %>
     <div id="admin_links">
       <%= link_to "Edit Article", edit_post_path(@post) %>
