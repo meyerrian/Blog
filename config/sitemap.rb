@@ -1,5 +1,5 @@
 # Set the host name for URL creation
-SitemapGenerator::Sitemap.default_host = "http://www.rianmeyer.com"
+SitemapGenerator::Sitemap.default_host = "http://www.hoopblurbs.com"
 SitemapGenerator::Sitemap.public_path = 'tmp/sitemaps/'
 SitemapGenerator::Sitemap.create do
   add '/posts'
