@@ -1,6 +1,21 @@
 .col-1, .col-2, .col-3 {
   float: left; }
 
+.welcome_note {
+  width: 98%;
+  background: transparentize(#51545D, 0.1);
+  margin: 1%;
+  padding: 3em;
+}
+  .welcome_note h2 {
+    color: white;
+    font-size: 3em;
+  }
+  .welcome_note p {
+    color: white;
+    font-size: 1.5em;
+  }
+
 .col-2 {
   width: 23%;
   background-color: transparentize(black, .2);
@@ -94,7 +109,7 @@
    display: block;
    text-align: center;
  }
- 
+
  .football {
    background-color: rgba(124, 214, 240, 1);
  }
@@ -115,6 +130,7 @@
 @media (max-width: 1200px) {
 
   .col-2,
+  .welcome_note,
   .col-2:first-child,
   .col-2:nth-child(4n-5),
   .col-2:nth-child(2n),
