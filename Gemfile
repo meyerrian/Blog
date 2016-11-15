@@ -17,7 +17,7 @@ gem 'will_paginate', '~> 3.0.7'
 gem 'mail_form', '~> 1.6'
 gem 'devise', '~> 4.2'
 gem 'sitemap_generator'
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 
 group :development, :test do
