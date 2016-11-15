@@ -15,10 +15,10 @@
 </head>
 <body>
   <header id="main_navigation" class="clearfix">
-    <%= link_to "Rian Meyer", root_path, class: "name" %>
+    <%= link_to "HoopBlurbs", root_path, class: "name" %>
     <nav>
-      <%= link_to "Articles", posts_path %>
-      <%= link_to "Projects", projects_path %>
+      <%= link_to "Blurbs", posts_path %>
+      <%= link_to "Articles", projects_path %>
       <%= link_to "Contact", new_contact_path %>
       <% if user_signed_in? %>
         <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
@@ -36,9 +36,9 @@
   <footer id="main_footer">
     <p class="copyright">&copy; 2016 Rian Meyer</p>
     <nav>
-      <a href="http://twitter.com/r1d166y" target="_blank"><i class="fa fa-twitter"></i></a>
-      <a href="http://instagram.com/rianbalotelli" target="_blank"><i class="fa fa-instagram"></i></a>
-      <a href="http://facebook.com/ricardo.b.marchisio" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="http://twitter.com/HoopBlurbs" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="http://instagram.com/hoopblurbs" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://m.facebook.com/HoopBlurbs/" target="_blank"><i class="fa fa-facebook"></i></a>
     </nav>
   </footer>
 
