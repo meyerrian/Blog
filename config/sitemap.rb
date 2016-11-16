@@ -2,7 +2,7 @@
 SitemapGenerator::Sitemap.default_host = "http://www.hoopblurbs.com"
 SitemapGenerator::Sitemap.public_path = 'tmp/sitemaps/'
 SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new
-SitemapGenerator::Sitemap.sitemaps_host = "http://#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com/"
+SitemapGenerator::Sitemap.sitemaps_host = "http://#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com"
 SitemapGenerator::Sitemap.sitemaps_path = 'sitemaps/'
 SitemapGenerator::Sitemap.create do
   add '/posts'
