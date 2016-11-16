@@ -4,16 +4,6 @@ SitemapGenerator::Sitemap.public_path = 'tmp/sitemaps/'
 SitemapGenerator::Sitemap.adapter = SitemapGenerator::S3Adapter.new
 SitemapGenerator::Sitemap.sitemaps_host = "http://#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com/"
 SitemapGenerator::Sitemap.sitemaps_path = 'sitemaps/'
-SitemapGenerator::Sitemap.create do
-  add '/posts'
-  Post.find_each do |post|
-    add post_path(post.slug), lastmod: post.updated_at
-  end
-
-  add '/projects'
-  Project.find_each do |project|
-    add project_path(project.slug), lastmod: project.updated_at
-  end
 
 
   # Put links creation logic here.
