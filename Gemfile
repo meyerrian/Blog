@@ -19,6 +19,7 @@ gem 'devise', '~> 4.2'
 gem 'sitemap_generator'
 gem 'aws-sdk', '< 2.0'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'fog-aws'
 
 group :development, :test do
   gem 'byebug'
