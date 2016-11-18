@@ -4,6 +4,9 @@
   <% @posts.each do |post| %>
   <div class="post">
     <p class="date"><%= post.created_at.strftime('%A, %b %d') %></p>
+    <% if @post.image.exists? %>
+      <%= image_tag @post.image.url(:postshow) %>
+    <% end %>
     <h2><a href="#"><%= link_to post.title, post %></a></h2>
     <hr/>
   </div>
