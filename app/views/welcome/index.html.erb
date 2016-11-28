@@ -22,7 +22,6 @@
   <% @projects.each do |project| %>
   <div class="col-2 homepage_content football"><% link_to project, project %>
     <div class="article_info">
-      <i class="fa fa-futbol-o fa-4x" aria-hidden="true"></i>
       <h4>NBA</h4>
       <h3><%= link_to project.title, project %></h3>
       <p class="date"><%= project.created_at.strftime("%A, %b %d") %></p>
