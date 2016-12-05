@@ -31,6 +31,7 @@
 
 .article_info {
   width: 100%;
+  float: left;
   border-bottom: 5px solid $border;
 }
 .date {
@@ -49,6 +50,7 @@
   text-align: left;
   margin: 0;
   padding: 0;
+  float: left;
 }
 
   .blurb-stats {
