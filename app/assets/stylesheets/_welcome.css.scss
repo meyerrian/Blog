@@ -71,14 +71,15 @@
     width: 492.7px;
     //background-color: yellow;
     opacity: 1;
-    margin: 50px 0;
+    margin: -20px 0;
     display: block;
   }
 .blurb-article {
-  background-color: red;
+  padding: 20px;
+  //background-color: red;
 }
 .blurb-article p{
-  font-size: 14px;
+  font-size: 12px;
   color: white;
   height: 100px;
 }
