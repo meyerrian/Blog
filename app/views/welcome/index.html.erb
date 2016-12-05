@@ -6,7 +6,7 @@
       </p>
   </div>
   <% @posts.each do |post| %>
-  <div class="col-2 homepage_content"><% link_to post, post %>
+  <div class="col-2">
     <div class="article_info">
       <% if post.image.exists? %>
         <%= image_tag post.image.url(:thumb) %>
@@ -14,20 +14,23 @@
       <div class="blurb-data">
         <h4><%= post.sport %></h4>
         <h3><%= link_to post.title, post %></h3>
-        <p class="date"><%= post.player %> <%= post.postion %> <%= post.team %></p>
+        <p class="date"><%= post.player %> | <%= post.postion %> | <%= post.team %></p>
         <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
       </div>
       <div class="blurb-stats">
-        <table class="tftable" border="4">
+        <table class="tftable">
           <tr><th>FG%</th><th>FT%</th><th>Threes</th><th>Points</th><th>Rebounds</th><th>Assists</th><th>Steals</th><th>Blocks</th><th>TO's</th></tr>
           <tr><td><%= post.fg %></td><td><%= post.ft %></td><td><%= post.threes %></td><td><%= post.points %></td><td><%= post.rebounds %></td><td><%= post.assists %></td><td><%= post.steals %></td><td><%= post.blocks %></td><td><%= post.turnovers %></td></tr>
         </table>
+      </div>
+      <div class="blurb-article">
+        <p><%= post.content %></p>
       </div>
     </div>
   </div>
   <% end %>
   <% @projects.each do |project| %>
-  <div class="col-3 homepage_content football"><% link_to project, project %>
+  <div class="col-3"><% link_to project, project %>
     <div class="article_info">
       <h4>NBA</h4>
       <h3><%= link_to project.title, project %></h3>
