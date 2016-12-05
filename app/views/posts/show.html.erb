@@ -5,7 +5,8 @@
     <% if @post.image.exists? %>
       <%= image_tag @post.image.url(:thumb) %>
     <% end %>
-    <p><%= @post.player %>  <%= @post.postion %>  <%= @post.team %></p>
+    <p><%= @post.player %>  <%= @post.postion %>  <%= @post.team %></p><br>
+    <p><%= @post.fg %> | <%= @post.ft %> | <%= @post.threes %> | <%= @post.points %> | <%= @post.rebounds %> | <%= @post.assists %> | <%= @post.steals %> | <%= @post.blocks %> | <%= @post.turnovers %>
     <hr/>
   </header>
   <div id="content">
