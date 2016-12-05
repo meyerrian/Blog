@@ -11,11 +11,18 @@
       <% if post.image.exists? %>
         <%= image_tag post.image.url(:thumb) %>
       <% end %>
-      <h4><%= post.sport %></h4>
-      <h3><%= link_to post.title, post %></h3>
-      <p class="date"><%= post.player %> <%= post.postion %> <%= post.team %></p>
-      <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
-      <p class="date"><%= markdown post.content %></p>
+      <div class="blurb-data">
+        <h4><%= post.sport %></h4>
+        <h3><%= link_to post.title, post %></h3>
+        <p class="date"><%= post.player %> <%= post.postion %> <%= post.team %></p>
+        <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+      </div>
+      <div class="blurb-stats">
+        <table class="tftable" border="4">
+          <tr><th>FG%</th><th>FT%</th><th>Threes</th><th>Points</th><th>Rebounds</th><th>Assists</th><th>Steals</th><th>Blocks</th><th>TO's</th></tr>
+          <tr><td><%= post.fg %></td><td><%= post.ft %></td><td><%= post.threes %></td><td><%= post.points %></td><td><%= post.rebounds %></td><td><%= post.assists %></td><td><%= post.steals %></td><td><%= post.blocks %></td><td><%= post.turnovers %></td></tr>
+        </table>
+      </div>
     </div>
   </div>
   <% end %>
