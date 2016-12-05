@@ -62,13 +62,14 @@
     background-color: yellow;
     position: absolute;
     opacity: 1;
+    margin: 50px 0;
   }
-  .blurb-article {
-    height: 300px;
-    float: right;
-    background-color: red;
-    position: relative;
-  }
+  //.blurb-article {
+    //height: 300px;
+    //float: right;
+    //background-color: red;
+    //position: relative;
+  //}
 
   table, th, td {
     border: 3px solid $border;
