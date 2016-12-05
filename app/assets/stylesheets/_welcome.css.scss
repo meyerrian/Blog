@@ -60,7 +60,7 @@
 
   .blurb-stats {
     width: 492.7px;
-    background-color: yellow;
+    //background-color: yellow;
     opacity: 1;
     margin: 0;
     display: block;
@@ -76,6 +76,7 @@
   table, th, td {
     border: 3px solid $border;
     font-size: .5rem;
+    background-color: white;
   }
 
   table {
