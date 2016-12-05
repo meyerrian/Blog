@@ -17,14 +17,14 @@
         <p class="date"><%= post.player %> | <%= post.postion %> | <%= post.team %></p>
         <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
       </div>
+      <div class="blurb-article">
+        <p><%= post.content %></p>
+      </div>
       <div class="blurb-stats">
         <table class="tftable">
           <tr><th>FG%</th><th>FT%</th><th>Threes</th><th>Points</th><th>Rebounds</th><th>Assists</th><th>Steals</th><th>Blocks</th><th>TO's</th></tr>
           <tr><td><%= post.fg %></td><td><%= post.ft %></td><td><%= post.threes %></td><td><%= post.points %></td><td><%= post.rebounds %></td><td><%= post.assists %></td><td><%= post.steals %></td><td><%= post.blocks %></td><td><%= post.turnovers %></td></tr>
         </table>
-      </div>
-      <div class="blurb-article">
-        <p><%= post.content %></p>
       </div>
     </div>
   </div>
