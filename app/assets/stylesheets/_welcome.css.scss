@@ -31,8 +31,12 @@
 
 .article_info {
   width: 100%;
-  float: left;
   border-bottom: 5px solid $border;
+}
+
+.article_info img {
+  border-radius: 100%;
+  float: left;
 }
 .date {
   font-size: 12px;
@@ -50,7 +54,6 @@
   text-align: left;
   margin: 0;
   padding: 0;
-  float: left;
 }
 
   .blurb-stats {
